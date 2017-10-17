@@ -65,24 +65,25 @@ module.exports = function(config) {
 
     // Concurrency level
     // how many browser should be started simultaneous
-    concurrency: Infinity
-  }),
-  webpack: {
-    module: {
-      loaders: [
-        {
-          test: /\.jsx?/,
-          exclude: /node_modules/,
-          loader: 'babel-loader'
-        }
-      ]
-    },
-    externals: {
-     cheerio: 'window',
-     'react/addons': 'react',
-     'react/lib/ExecutionEnvironment': 'react',
-     'react/lib/ReactContext': 'react',
-     'react-addons-test-utils': 'react-dom',
+    concurrency: Infinity,
+
+    webpack: {
+      module: {
+        loaders: [
+          {
+            test: /\.jsx?/,
+            exclude: /node_modules/,
+            loader: 'babel-loader'
+          }
+        ]
+      },
+      externals: {
+        cheerio: 'window',
+        'react/addons': 'react',
+        'react/lib/ExecutionEnvironment': 'react',
+        'react/lib/ReactContext': 'react',
+        'react-addons-test-utils': 'react-dom',
+      }
     }
-  }
+  })
 }
