@@ -3,6 +3,8 @@ import 'babel-polyfill';
 import React from 'react';
 import { mount } from 'enzyme';
 import jasmineEnzyme from 'jasmine-enzyme';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 
 Object.assign(global, {
@@ -11,9 +13,12 @@ Object.assign(global, {
   React
 });
 
+configure({ adapter: new Adapter() });
+
 beforeEach(() => {
   jasmineEnzyme();
 })
+
 
 // function to require all modules for a given context
 let requireAll = requireContext => {
