@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+![Build Status](https://app.codeship.com/projects/319d21a0-950f-0135-cd90-467ad8efcfd1/status?branch=master)
+![Code Climate](https://codeclimate.com/github/uncommonAP/CourseCorrection.png)
+![Coverage Status](https://coveralls.io/repos/uncommonAP/CourseCorrection/badge.png)
