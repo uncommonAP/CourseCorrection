@@ -5,18 +5,10 @@ class SkillsContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      form: true,
+      form: false,
       skills: []
     }
     this.addNewSkill = this.addNewSkill.bind(this)
-  }
-
-  componentDidMount() {
-    fetch('http://localhost:5000/api/v1/skills')
-    .then(response => response.json())
-    .then(body => {
-      console.log(body);
-    })
   }
 
   addNewSkill(formPayload) {

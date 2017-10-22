@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SkillsContainer from './SkillsContainer'
+import SkillsContainer from './containers/SkillsContainer'
 
 class CourseCorrection extends Component {
   render() {
